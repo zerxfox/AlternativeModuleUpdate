@@ -1,2 +1,12 @@
 # AlternativeModuleUpdate
-Alternative update of the module via GitHub directly in the module itself.
+Alternative update of the module via GitHub directly in the module itself. 
+Supports Magisk, KSU, Apatch.
+
+`module_update.sh` should be located in the module_archive.zip  
+In `module.prop`, the line `updateJson` needs to be removed if it exists.  
+
+Two lines need to be added to the module itself to connect `module_update.sh`:
+```shell
+source "./module_update.sh"
+module_update
+```
