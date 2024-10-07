@@ -10,3 +10,5 @@ Two lines need to be added to the module itself to connect `module_update.sh`:
 source "./module_update.sh"
 module_update
 ```
+
+In `module_update.sh` itself, the following lines need to be changed: `CURRENT_VERSION`, `UPDATE_URL`, `ZIP_FILE`.
